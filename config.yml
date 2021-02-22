@@ -1,0 +1,35 @@
+motd:
+  aliases:
+  - 查服
+  - '!motdbe'
+  - Hey bot, Tell me the Message of the Day for a Minecraft Bedrock server which is
+    located at
+  errorsformat:
+    addressInvalid: 错误：服务器地址无效。
+    generic: 错误：{error}
+    timeout: 错误：服务器超时。
+  hintformat: '用法：
+
+    {alias} [--help|-?]
+
+    {alias} <服务器地址>:[端口]
+
+    {alias} <服务器别名>
+
+    {alias} --list'
+  returnformat: '{motd}({subMotd})
+
+    版本：{version}({protocolVersion})
+
+    在线玩家：{playerCount}/{maximumPlayerCount}'
+  servers:
+    lifeboat:
+    - play.lbsg.net
+    - 19132
+    本地服务器(localhost):
+    - 127.0.0.1
+    - 19132
+xhsock:
+  errorsformat:
+    messageIsTooLong: 消息过长，请分开发送
+  servers_groups_map: null
